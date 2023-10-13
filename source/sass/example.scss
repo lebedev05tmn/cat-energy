@@ -1,0 +1,10 @@
+.example {
+    &__container {
+        background: $baseGrey;
+    }
+    &__description {
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+}

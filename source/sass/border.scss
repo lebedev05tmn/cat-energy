@@ -1,0 +1,9 @@
+@import "variables";
+
+.border {
+    border: 1px $specialGrey solid;
+    &__value {
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
