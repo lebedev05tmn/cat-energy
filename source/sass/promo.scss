@@ -1,11 +1,11 @@
+@import "mixin";
 .promo {
     background: linear-gradient(rgba($baseGreen, 0.85), rgba($baseGreen, 0.85)),
         url("../img/cat-backgorund.png");
     background-size: contain;
     height: 720px;
     &__text {
-        font-size: 20px;
-        line-height: 20px;
+        @include font(0, 0, 20px, 20px, 0);
         text-transform: uppercase;
     }
 }

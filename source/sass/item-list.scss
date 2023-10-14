@@ -1,16 +1,13 @@
 @import "variables";
+@import "mixin";
 .item-list {
     background: $baseGrey;
     &__title {
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 36px;
+        @include font(0, 0, 36px, 36px, 0);
         text-transform: uppercase;
     }
     &__link {
-        font-size: 20px;
-        line-height: 30px;
-        color: $baseBlack;
+        @include font(0, 0, 20px, 30px, 0);
         text-decoration: none;
         text-transform: uppercase;
         &::after {

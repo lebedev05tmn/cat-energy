@@ -1,10 +1,10 @@
+@import "mixin";
 .example {
     &__container {
         background: $baseGrey;
     }
     &__description {
-        font-size: 20px;
-        line-height: 20px;
+        @include font(0, 0, 20px, 20px, 0);
         text-transform: uppercase;
     }
 }

@@ -1,8 +1,7 @@
 @import "variables";
+@import "mixin";
 .button {
-    color: $baseWhite;
+    @include font(0, 0, 20px, 20px, $baseWhite);
     text-transform: uppercase;
     background: $baseGreen;
-    font-size: 20px;
-    line-height: 20px;
 }

@@ -34,25 +34,28 @@ ol {
 }
 
 .button {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   background: #68b738;
-  font-size: 20px;
-  line-height: 20px;
 }
 
 .title {
-  font-size: 60px;
+  font-family: "Oswald";
   font-weight: 400;
+  font-size: 60px;
   line-height: 60px;
+  color: #000000;
 }
 
 .text {
   font-family: "Arial", sans-serif;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
-  text-align: left;
   color: #444444;
 }
 
@@ -61,9 +64,11 @@ ol {
   text-align: center;
 }
 .site-menu__link {
-  color: #000000;
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  color: #000000;
 }
 
 .promo {
@@ -72,8 +77,11 @@ ol {
   height: 720px;
 }
 .promo__text {
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -81,12 +89,16 @@ ol {
   background: #f2f2f2;
 }
 .item-list__title {
-  font-size: 36px;
+  font-family: "Oswald";
   font-weight: 400;
+  font-size: 36px;
   line-height: 36px;
+  color: #000000;
   text-transform: uppercase;
 }
 .item-list__link {
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #000000;
@@ -101,8 +113,11 @@ ol {
   background: #f2f2f2;
 }
 .example__description {
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -110,22 +125,66 @@ ol {
   border: 1px #cdcdcd solid;
 }
 .border__value {
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 30px;
   line-height: 37px;
+  color: #000000;
 }
 
 .slider__text {
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  color: #000000;
   text-transform: uppercase;
+}
+
+.card {
+  background: #f2f2f2;
+}
+.card__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  color: #444444;
+}
+.card__item {
+  border-bottom: #cdcdcd 1px solid;
+}
+.card--more {
+  background: none;
+  border: #f2f2f2 2px solid;
+}
+.card--more .card__button {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  background: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.additional__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
 }
 
 .map {
   background: #ffffff;
 }
 .map__title {
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 20px;
   line-height: 26px;
+  color: #000000;
 }
 
 .page-footer {

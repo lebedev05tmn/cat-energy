@@ -1,0 +1,20 @@
+@import "variables";
+@mixin font($family, $weight, $size, $lh, $color) {
+    @if ($family==0) {
+        font-family: "Oswald";
+    } @else {
+        font-family: "Arial", sans-serif;
+    }
+    @if ($weight==0) {
+        font-weight: 400;
+    } @else {
+        font-weight: $weight;
+    }
+    font-size: $size;
+    line-height: $lh;
+    @if ($color==0) {
+        color: $baseBlack;
+    } @else {
+        color: $color;
+    }
+}

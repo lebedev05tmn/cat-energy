@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixin";
+.card {
+    background: $baseGrey;
+    &__title {
+        @include font(0, 0, 20px, 21px, $specialDark);
+    }
+    &__item {
+        border-bottom: $specialGrey 1px solid;
+    }
+    &--more {
+        background: none;
+        border: $baseGrey 2px solid;
+    }
+    &--more &__button {
+        @include font(0, 0, 16px, 20px, $specialDark);
+        background: $baseGrey;
+        text-transform: uppercase;
+    }
+}
