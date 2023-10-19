@@ -176,6 +176,54 @@ ol {
   color: #000000;
 }
 
+.product__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.gift {
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-gift.png") no-repeat;
+  background-size: contain;
+}
+
+.quests__text {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.form {
+  border: none;
+}
+.form input {
+  border: #e7e7e7 1px solid;
+  border-radius: 0px;
+}
+.form label,
+.form input::placeholder {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.submit__text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
 .map {
   background: #ffffff;
 }

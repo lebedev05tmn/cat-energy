@@ -1,0 +1,7 @@
+@import "mixin";
+.product {
+    &__title {
+        @include font(0, 0, 20px, 20px, 0);
+        text-transform: uppercase;
+    }
+}

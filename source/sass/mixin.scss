@@ -18,3 +18,7 @@
         color: $color;
     }
 }
+@mixin pageBorder {
+    border: $borderColor 1px solid;
+    border-radius: 0px;
+}

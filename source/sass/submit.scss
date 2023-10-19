@@ -1,0 +1,6 @@
+@import "mixin";
+.submit {
+    &__text {
+        @include font(1, 0, 16px, 16px, 0);
+    }
+}

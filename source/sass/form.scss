@@ -1,0 +1,12 @@
+@import "mixin";
+.form {
+    input {
+        @include pageBorder;
+    }
+    border: none;
+    label,
+    input::placeholder {
+        @include font(0, 0, 20px, 30px, $specialDark);
+        text-transform: uppercase;
+    }
+}
