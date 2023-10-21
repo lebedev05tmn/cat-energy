@@ -31,13 +31,18 @@ a {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .button {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   background: #68b738;
@@ -46,17 +51,22 @@ ol {
 .title {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   color: #000000;
 }
 
 .text {
   font-family: "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   color: #444444;
+}
+
+.page {
+  margin: 0 20px;
+  padding: 0;
 }
 
 .site-menu {
@@ -65,23 +75,26 @@ ol {
 }
 .site-menu__link {
   font-family: "Oswald";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   color: #000000;
 }
 
 .promo {
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-backgorund.png");
   background-size: contain;
-  height: 720px;
+  height: 302px;
+}
+.promo .title {
+  color: #ffffff;
 }
 .promo__text {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #000000;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -91,16 +104,16 @@ ol {
 .item-list__title {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 37px;
   color: #000000;
   text-transform: uppercase;
 }
 .item-list__link {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 16px;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
@@ -109,14 +122,14 @@ ol {
   content: url("../img/icon_arrow.svg");
 }
 
-.example__container {
+.example {
   background: #f2f2f2;
 }
 .example__description {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 14px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -127,16 +140,16 @@ ol {
 .border__value {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 24px;
   color: #000000;
 }
 
-.slider__text {
+.slider__button {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -230,9 +243,18 @@ ol {
 .map__title {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.4px;
+  color: #444444;
 }
 
 .page-footer {

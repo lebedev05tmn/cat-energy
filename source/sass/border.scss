@@ -4,6 +4,6 @@
 .border {
     border: 1px $specialGrey solid;
     &__value {
-        @include font(0, 0, 30px, 37px, 0);
+        @include font(0, 0, 24px, 24px, 0);
     }
 }

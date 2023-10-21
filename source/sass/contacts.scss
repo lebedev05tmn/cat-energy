@@ -1,0 +1,7 @@
+@import "mixin";
+@import "variables";
+.contacts {
+    &__text {
+        @include font(1, 0, 16px, 18.4px, $specialDark);
+    }
+}
