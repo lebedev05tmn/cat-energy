@@ -1,7 +1,6 @@
 @import "variables";
 @import "mixin";
 .map {
-    background: $baseWhite;
     &__title {
         @include font(0, 0, 16px, 20px, 0);
         text-transform: uppercase;

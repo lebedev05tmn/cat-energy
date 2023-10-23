@@ -4,12 +4,14 @@
     background: linear-gradient(rgba($baseGreen, 0.85), rgba($baseGreen, 0.85)),
         url("../img/cat-backgorund.png");
     background-size: contain;
-    height: 302px;
-    & .title {
+    padding: 27px 0 20px 0;
+    text-align: center;
+    .title {
         color: $baseWhite;
     }
     &__text {
         @include font(0, 0, 14px, 14px, $baseWhite);
         text-transform: uppercase;
+        margin: 25px 0 29px 0;
     }
 }

@@ -1,12 +1,18 @@
 @import "mixin";
 .form {
+    fieldset {
+        border: none;
+    }
     input {
         @include pageBorder;
     }
     border: none;
+    legend {
+        @include font(0, 0, 24px, 26px, 0);
+    }
     label,
     input::placeholder {
-        @include font(0, 0, 20px, 30px, $specialDark);
+        @include font(0, 0, 16px, 18px, $specialDark);
         text-transform: uppercase;
     }
 }

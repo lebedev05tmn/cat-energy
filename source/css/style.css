@@ -18,20 +18,12 @@
 }
 body {
   font-family: "Oswald", sans-serif;
-  margin: 0;
-  padding: 0;
   color: #000000;
   background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
-}
-
-ul,
-ol {
-  list-style: none;
-  padding: 0;
 }
 
 .visually-hidden {
@@ -64,8 +56,10 @@ ol {
   color: #444444;
 }
 
-.page {
-  margin: 0 20px;
+.page ul,
+.page ol {
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -84,7 +78,8 @@ ol {
 .promo {
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-backgorund.png");
   background-size: contain;
-  height: 302px;
+  padding: 27px 0 20px 0;
+  text-align: center;
 }
 .promo .title {
   color: #ffffff;
@@ -96,9 +91,11 @@ ol {
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  margin: 25px 0 29px 0;
 }
 
 .item-list {
+  padding: 21px 0 18px 0;
   background: #f2f2f2;
 }
 .item-list__title {
@@ -157,12 +154,20 @@ ol {
 .card {
   background: #f2f2f2;
 }
+.card .text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+}
 .card__title {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 20px;
-  line-height: 21px;
+  line-height: 24px;
   color: #444444;
+  text-transform: uppercase;
 }
 .card__item {
   border-bottom: #cdcdcd 1px solid;
@@ -170,6 +175,13 @@ ol {
 .card--more {
   background: none;
   border: #f2f2f2 2px solid;
+}
+.card--more .text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
 }
 .card--more .card__button {
   font-family: "Oswald";
@@ -188,7 +200,17 @@ ol {
   line-height: 36px;
   color: #000000;
 }
+.additional .text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}
 
+.product {
+  border: #cdcdcd 1px solid;
+}
 .product__title {
   font-family: "Oswald";
   font-weight: 400;
@@ -199,15 +221,23 @@ ol {
 }
 
 .gift {
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-gift.png") no-repeat;
+  text-align: center;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-gift.png");
   background-size: contain;
+}
+.gift__text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .quests__text {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 18px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -215,16 +245,26 @@ ol {
 .form {
   border: none;
 }
+.form fieldset {
+  border: none;
+}
 .form input {
   border: #e7e7e7 1px solid;
   border-radius: 0px;
+}
+.form legend {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
 }
 .form label,
 .form input::placeholder {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   color: #444444;
   text-transform: uppercase;
 }
@@ -237,9 +277,6 @@ ol {
   color: #000000;
 }
 
-.map {
-  background: #ffffff;
-}
 .map__title {
   font-family: "Oswald";
   font-weight: 400;
