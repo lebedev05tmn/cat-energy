@@ -1,7 +1,23 @@
+@import "variables";
+@import "mixin";
 .site-menu {
-    list-style: none;
-    text-align: center;
+    display: none;
+    @media (min-width: $tabletWidth) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        width: 62%;
+    }
+    @media (min-width: $desktopWidth) {
+        width: 39%;
+    }
     &__link {
         @include font(0, 500, 20px, 20px, 0);
+        text-transform: uppercase;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            @include font(0, 0, 18px, 24px, 0);
+        }
     }
 }

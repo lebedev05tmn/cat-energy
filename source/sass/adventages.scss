@@ -1,0 +1,23 @@
+@import "variables";
+.adventages {
+    width: $mobilePercent;
+    margin: 0 auto;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: $desktopWidth) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        width: $tabletPercent;
+    }
+    @media (min-width: $desktopWidth) {
+        width: $desktopPercent;
+    }
+}

@@ -1,8 +1,21 @@
 @import "variables";
 @import "mixin";
 .map {
+    background: $baseWhite;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $desktopWidth) {
+        background: $baseGrey;
+    }
     &__title {
         @include font(0, 0, 16px, 20px, 0);
         text-transform: uppercase;
+    }
+    &__image {
+        width: 100%;
+        order: 2;
+        @media (min-width: $tabletWidth) {
+            width: 0;
+        }
     }
 }

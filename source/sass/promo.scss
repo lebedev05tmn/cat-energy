@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixin";
 .promo {
+    width: 100%;
     background: linear-gradient(rgba($baseGreen, 0.85), rgba($baseGreen, 0.85)),
         url("../img/cat-backgorund.png");
     background-size: contain;

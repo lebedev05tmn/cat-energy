@@ -1,0 +1,25 @@
+@import "variables";
+.page-header {
+    width: $mobilePercent;
+    margin: 10px auto 18px auto;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        width: $tabletPercent;
+        margin: 24px auto;
+    }
+    @media (min-width: $desktopWidth) {
+        width: $desktopPercent;
+        margin: 53px auto;
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__burger {
+        border: none;
+        background: none;
+        @media (min-width: $tabletWidth) {
+            display: none;
+        }
+    }
+}

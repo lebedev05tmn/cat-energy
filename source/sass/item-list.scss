@@ -1,8 +1,18 @@
 @import "variables";
 @import "mixin";
 .item-list {
-    padding: 21px 0 18px 0;
+    padding: 21px 0 18px 20px;
     background: $baseGrey;
+    width: $mobilePercent;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        width: $tabletPercent;
+    }
+    @media (min-width: $desktopWidth) {
+        margin: 0;
+    }
     &__title {
         @include font(0, 0, 24px, 37px, 0);
         text-transform: uppercase;
@@ -11,8 +21,23 @@
         @include font(0, 0, 16px, 16px, 0);
         text-decoration: none;
         text-transform: uppercase;
+        margin: 15px 0 18px 0;
         &::after {
             content: url("../img/icon_arrow.svg");
+        }
+    }
+    .text {
+        margin: 22px 0 23px 0;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            margin: 24px 0 48px 0;
+        }
+    }
+    &__item--order {
+        display: flex;
+        img {
+            @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+                display: none;
+            }
         }
     }
 }

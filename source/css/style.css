@@ -16,6 +16,12 @@
   font-weight: 400;
   src: local("Arial"), url("../fonts/Arial.woff2") format("woff2"), url("../fonts/Arial.woff") format("woff");
 }
+html,
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Oswald", sans-serif;
   color: #000000;
@@ -38,6 +44,7 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   background: #68b738;
+  display: block;
 }
 
 .title {
@@ -59,13 +66,79 @@ a {
 .page ul,
 .page ol {
   list-style: none;
-  margin: 0;
-  padding: 0;
+}
+
+.page-header {
+  width: 87.5%;
+  margin: 10px auto 18px auto;
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .page-header {
+    width: 90%;
+    margin: 24px auto;
+  }
+}
+@media (min-width: 1220px) {
+  .page-header {
+    width: 85%;
+    margin: 53px auto;
+  }
+}
+.page-header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header__burger {
+  border: none;
+  background: none;
+}
+@media (min-width: 768px) {
+  .page-header__burger {
+    display: none;
+  }
+}
+
+.logo {
+  display: none;
+}
+.logo--mobile-text {
+  display: block;
+}
+.logo--mobile-logo {
+  display: block;
+}
+@media (min-width: 768px) {
+  .logo {
+    display: block;
+  }
+  .logo--mobile-text {
+    display: none;
+  }
+  .logo--mobile-logo {
+    display: none;
+  }
 }
 
 .site-menu {
-  list-style: none;
-  text-align: center;
+  display: none;
+}
+@media (min-width: 768px) {
+  .site-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .site-menu {
+    width: 62%;
+  }
+}
+@media (min-width: 1220px) {
+  .site-menu {
+    width: 39%;
+  }
 }
 .site-menu__link {
   font-family: "Oswald";
@@ -73,9 +146,20 @@ a {
   font-size: 20px;
   line-height: 20px;
   color: #000000;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .site-menu__link {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  }
 }
 
 .promo {
+  width: 100%;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-backgorund.png");
   background-size: contain;
   padding: 27px 0 20px 0;
@@ -94,9 +178,36 @@ a {
   margin: 25px 0 29px 0;
 }
 
+.cards {
+  width: 100%;
+}
+@media (min-width: 1220px) {
+  .cards__list {
+    margin: 20px auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+  }
+}
+
 .item-list {
-  padding: 21px 0 18px 0;
+  padding: 21px 0 18px 20px;
   background: #f2f2f2;
+  width: 87.5%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .item-list {
+    width: 90%;
+  }
+}
+@media (min-width: 1220px) {
+  .item-list {
+    margin: 0;
+  }
 }
 .item-list__title {
   font-family: "Oswald";
@@ -114,12 +225,61 @@ a {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 15px 0 18px 0;
 }
 .item-list__link::after {
   content: url("../img/icon_arrow.svg");
 }
+.item-list .text {
+  margin: 22px 0 23px 0;
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .item-list .text {
+    margin: 24px 0 48px 0;
+  }
+}
+.item-list__item--order {
+  display: flex;
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .item-list__item--order img {
+    display: none;
+  }
+}
+
+.adventages {
+  width: 87.5%;
+  margin: 0 auto;
+}
+.adventages__list {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .adventages__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1220px) {
+  .adventages__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .adventages {
+    width: 90%;
+  }
+}
+@media (min-width: 1220px) {
+  .adventages {
+    width: 85%;
+  }
+}
 
 .example {
+  width: 100%;
   background: #f2f2f2;
 }
 .example__description {
@@ -129,6 +289,20 @@ a {
   line-height: 14px;
   color: #000000;
   text-transform: uppercase;
+}
+.example__container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .example__container {
+    width: 90%;
+  }
+}
+@media (min-width: 1220px) {
+  .example__container {
+    width: 85%;
+  }
 }
 
 .border {
@@ -277,6 +451,16 @@ a {
   color: #000000;
 }
 
+.map {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1220px) {
+  .map {
+    background: #f2f2f2;
+  }
+}
 .map__title {
   font-family: "Oswald";
   font-weight: 400;
@@ -285,7 +469,20 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
+.map__image {
+  width: 100%;
+  order: 2;
+}
+@media (min-width: 768px) {
+  .map__image {
+    width: 0;
+  }
+}
 
+.contacts {
+  display: flex;
+  flex-direction: row;
+}
 .contacts__text {
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -296,5 +493,6 @@ a {
 
 .page-footer {
   background: #f2f2f2;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
