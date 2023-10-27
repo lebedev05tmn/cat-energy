@@ -10,6 +10,12 @@
     .title {
         color: $baseWhite;
     }
+    .button {
+        padding: 7px 13.75%;
+        @media (min-width: $tabletWidth) {
+            padding: 14px 3.38%;
+        }
+    }
     &__text {
         @include font(0, 0, 14px, 14px, $baseWhite);
         text-transform: uppercase;

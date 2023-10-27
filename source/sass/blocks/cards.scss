@@ -3,7 +3,7 @@
     width: 100%;
     &__list {
         @media (min-width: $desktopWidth) {
-            margin: 20px auto;
+            margin: 82px auto 71px auto;
             width: $desktopPercent;
             display: grid;
             grid-template-columns: repeat(2, 1fr);

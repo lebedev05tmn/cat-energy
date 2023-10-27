@@ -4,5 +4,5 @@
     @include font(0, 0, 14px, 18px, $baseWhite);
     text-transform: uppercase;
     background: $baseGreen;
-    display: block;
+    display: inline-block;
 }

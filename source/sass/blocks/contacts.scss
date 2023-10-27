@@ -1,0 +1,19 @@
+@import "mixin";
+@import "variables";
+.contacts {
+    &__text {
+        @include font(1, 0, 16px, 18.4px, $specialDark);
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    width: $mobilePercent;
+    margin: 0 auto;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        width: $tabletPercent;
+    }
+    @media (min-width: $desktopWidth) {
+        width: $desktopPercent;
+    }
+}

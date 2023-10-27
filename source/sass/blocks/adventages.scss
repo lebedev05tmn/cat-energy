@@ -1,0 +1,59 @@
+@import "variables";
+.adventages {
+    width: $mobilePercent;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        width: $tabletPercent;
+    }
+    @media (min-width: $desktopWidth) {
+        width: $desktopPercent;
+    }
+    margin: 0 auto;
+    .title {
+        margin-bottom: 40px;
+        @media (min-width: $tabletWidth) {
+            margin-bottom: 32px;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: $desktopWidth) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 49px;
+            @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+                margin-bottom: 47px;
+            }
+            @media (min-width: $desktopWidth) {
+                margin-bottom: 26px;
+            }
+        }
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            margin-bottom: 37px;
+        }
+        @media (min-width: $tabletWidth) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .text {
+            width: 55%;
+        }
+    }
+    &__icon {
+        @media (min-width: $tabletWidth) {
+            margin-bottom: 31px;
+        }
+    }
+}

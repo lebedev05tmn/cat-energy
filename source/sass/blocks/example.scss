@@ -1,0 +1,82 @@
+@import "mixin";
+@import "variables";
+.example {
+    width: 100%;
+    background: $baseGrey;
+    &__description {
+        @include font(0, 0, 14px, 14px, 0);
+        text-transform: uppercase;
+    }
+    padding: 25px 0 40px 0;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        padding: 43px 0 55px 0;
+    }
+    @media (min-width: $desktopWidth) {
+        padding: 0;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: $desktopWidth) {
+            flex-direction: row;
+        }
+        width: $mobilePercent;
+        margin: 0 auto;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            width: $tabletPercent;
+        }
+        @media (min-width: $desktopWidth) {
+            width: $desktopPercent;
+        }
+    }
+    &__sublist {
+        display: flex;
+        justify-content: space-between;
+        @media (min-width: $desktopWidth) {
+            justify-content: flex-start;
+        }
+    }
+    &__subitem {
+        display: none;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            display: inline-block;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            display: none;
+        }
+        @media (min-width: $desktopWidth) {
+            margin-top: 55px;
+        }
+    }
+    .title {
+        width: $mobilePercent;
+        margin: 0 auto;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            width: $tabletPercent;
+        }
+        @media (min-width: $desktopWidth) {
+            width: $desktopPercent;
+        }
+        margin-bottom: 40px;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            margin-bottom: 63px;
+        }
+        @media (min-width: $desktopWidth) {
+            margin-bottom: 76px;
+        }
+    }
+    .text {
+        margin-bottom: 20px;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            margin-bottom: 63px;
+        }
+        @media (min-width: $desktopWidth) {
+            margin-bottom: 69px;
+        }
+    }
+}

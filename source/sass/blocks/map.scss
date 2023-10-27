@@ -4,6 +4,15 @@
     background: $baseWhite;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &__container {
+        width: $mobilePercent;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     @media (min-width: $desktopWidth) {
         background: $baseGrey;
     }
