@@ -1,14 +1,15 @@
+@import "mixin";
 @import "variables";
 .page-header {
     width: $mobilePercent;
     margin: 10px auto 18px auto;
     @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
         width: $tabletPercent;
-        margin: 24px auto;
+        margin: 24px auto 0 auto;
     }
     @media (min-width: $desktopWidth) {
         width: $desktopPercent;
-        margin: 53px auto;
+        margin: 53px auto 0 auto;
     }
     &__navigation {
         display: flex;

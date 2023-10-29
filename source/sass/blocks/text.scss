@@ -1,3 +1,4 @@
+@import "mixin";
 @import "variables";
 .text {
     @include font(1, 0, 14px, 18px, $specialDark);

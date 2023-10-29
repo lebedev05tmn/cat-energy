@@ -1,6 +1,19 @@
 @import "mixin";
+@import "variables";
 .submit {
     &__text {
         @include font(1, 0, 16px, 16px, 0);
+    }
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $tabletWidth) {
+        flex-direction: row;
+    }
+    padding-bottom: 32px;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        padding-bottom: 72px;
+    }
+    @media (min-width: $desktopWidth) {
+        padding-bottom: 82px;
     }
 }

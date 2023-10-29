@@ -1,0 +1,12 @@
+@import "mixin";
+@import "variables";
+
+.comment {
+    padding: 23.57px 0 22.75px 0;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        padding: 65px 0;
+    }
+    @media (min-width: $desktopWidth) {
+        padding: 69px 0 67px 0;
+    }
+}

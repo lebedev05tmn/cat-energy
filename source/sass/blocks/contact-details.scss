@@ -1,0 +1,18 @@
+@import "mixin";
+@import "variables";
+.contact-details {
+    &__title {
+        margin-bottom: 35px;
+    }
+    @media (min-width: $tabletWidth) {
+        margin-bottom: 76px;
+    }
+    &__list {
+        display: flex;
+        @media (min-width: $desktopWidth) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        flex-direction: column;
+    }
+}

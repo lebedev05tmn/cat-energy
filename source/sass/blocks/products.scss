@@ -1,0 +1,17 @@
+@import "mixin";
+@import "variables";
+
+.products {
+    width: $mobilePercent;
+    margin: 0 auto;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        width: $tabletPercent;
+    }
+    @media (min-width: $desktopWidth) {
+        width: $desktopPercent;
+    }
+    padding-top: 21px;
+    .title {
+        margin-bottom: 41px;
+    }
+}

@@ -1,0 +1,11 @@
+@import "mixin";
+@import "variables";
+
+.program {
+    border: none;
+    border-top: $borderColor3 1px solid;
+    border-bottom: $borderColor3 1px solid;
+    @media (min-width: $tabletWidth) {
+        border: $borderColor3 1px solid;
+    }
+}

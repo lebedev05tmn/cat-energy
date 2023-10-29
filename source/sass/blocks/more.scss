@@ -1,0 +1,33 @@
+@import "mixin";
+@import "variables";
+
+.more {
+    &__title {
+        margin-bottom: 34px;
+        @media (min-width: $tabletWidth) {
+            margin-bottom: 57px;
+        }
+    }
+    &__list {
+        display: flex;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: $desktopWidth) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    &__item {
+        &:last-child {
+            margin-bottom: 34px;
+            @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+                margin-bottom: 54px;
+            }
+            @media (min-width: $desktopWidth) {
+                margin-bottom: 61px;
+            }
+        }
+    }
+}

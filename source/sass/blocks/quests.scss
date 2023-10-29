@@ -1,7 +1,30 @@
 @import "mixin";
+@import "variables";
 .quests {
+    width: $mobilePercent;
+    margin: 0 auto;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        width: $tabletPercent;
+    }
+    @media (min-width: $desktopWidth) {
+        width: $desktopPercent;
+    }
+    padding-top: 27px;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        padding-top: 65px;
+    }
+    @media (min-width: $desktopWidth) {
+        padding-top: 74px;
+    }
     &__text {
         @include font(0, 0, 14px, 18px, 0);
         text-transform: uppercase;
+        margin: 37px 0 39px 0;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            margin: 54px 0 66px 0;
+        }
+        @media (min-width: $desktopWidth) {
+            margin: 56px 0 66px 0;
+        }
     }
 }

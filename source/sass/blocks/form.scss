@@ -1,12 +1,12 @@
 @import "mixin";
+@import "variables";
 .form {
-    fieldset {
+    fieldset:not(.program) {
         border: none;
     }
     input {
         @include pageBorder;
     }
-    border: none;
     legend {
         @include font(0, 0, 24px, 26px, 0);
     }

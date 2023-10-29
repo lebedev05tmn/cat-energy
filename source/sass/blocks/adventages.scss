@@ -1,4 +1,6 @@
+@import "mixin";
 @import "variables";
+
 .adventages {
     width: $mobilePercent;
     @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {

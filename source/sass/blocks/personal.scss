@@ -1,0 +1,19 @@
+@import "mixin";
+@import "variables";
+
+.personal {
+    padding-bottom: 26px;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        padding-bottom: 71px;
+    }
+    @media (min-width: $desktopWidth) {
+        padding-bottom: 69px;
+    }
+    display: flex;
+    @media (min-width: $desktopWidth) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    flex-direction: column;
+    justify-content: space-between;
+}
