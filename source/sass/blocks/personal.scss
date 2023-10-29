@@ -3,7 +3,7 @@
 
 .personal {
     padding-bottom: 26px;
-    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+    @media (min-width: $tabletWidth) {
         padding-bottom: 71px;
     }
     @media (min-width: $desktopWidth) {

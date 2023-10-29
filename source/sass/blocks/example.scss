@@ -8,7 +8,7 @@
         text-transform: uppercase;
     }
     padding: 25px 0 40px 0;
-    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+    @media (min-width: $tabletWidth) {
         padding: 43px 0 55px 0;
     }
     @media (min-width: $desktopWidth) {
@@ -24,7 +24,7 @@
         }
         width: $mobilePercent;
         margin: 0 auto;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             width: $tabletPercent;
         }
         @media (min-width: $desktopWidth) {
@@ -40,13 +40,13 @@
     }
     &__subitem {
         display: none;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             display: inline-block;
         }
     }
     &__text {
         margin-top: 20px;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             display: none;
         }
         @media (min-width: $desktopWidth) {
@@ -56,14 +56,14 @@
     .title {
         width: $mobilePercent;
         margin: 0 auto;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             width: $tabletPercent;
         }
         @media (min-width: $desktopWidth) {
             width: $desktopPercent;
         }
         margin-bottom: 40px;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             margin-bottom: 63px;
         }
         @media (min-width: $desktopWidth) {
@@ -72,7 +72,7 @@
     }
     .text {
         margin-bottom: 20px;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             margin-bottom: 63px;
         }
         @media (min-width: $desktopWidth) {

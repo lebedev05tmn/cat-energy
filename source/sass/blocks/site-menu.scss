@@ -7,7 +7,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+    @media (min-width: $tabletWidth) {
         width: 62%;
     }
     @media (min-width: $desktopWidth) {
@@ -16,7 +16,7 @@
     &__link {
         @include font(0, 500, 20px, 20px, 0);
         text-transform: uppercase;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             @include font(0, 0, 18px, 24px, 0);
         }
     }

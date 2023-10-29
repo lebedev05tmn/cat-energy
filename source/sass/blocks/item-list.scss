@@ -7,7 +7,7 @@
     margin: 20px auto;
     display: flex;
     flex-direction: column;
-    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+    @media (min-width: $tabletWidth) {
         width: $tabletPercent;
         padding: 77px 0 53px 52px;
     }
@@ -30,14 +30,14 @@
     }
     .text {
         margin: 22px 0 23px 0;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             margin: 24px 0 48px 0;
         }
     }
     &__item--order {
         display: flex;
         img {
-            @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            @media (min-width: $tabletWidth) {
                 display: none;
             }
         }

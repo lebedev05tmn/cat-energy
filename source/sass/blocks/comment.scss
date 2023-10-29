@@ -3,7 +3,7 @@
 
 .comment {
     padding: 23.57px 0 22.75px 0;
-    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+    @media (min-width: $tabletWidth) {
         padding: 65px 0;
     }
     @media (min-width: $desktopWidth) {

@@ -3,7 +3,7 @@
 .page-header {
     width: $mobilePercent;
     margin: 10px auto 18px auto;
-    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+    @media (min-width: $tabletWidth) {
         width: $tabletPercent;
         margin: 24px auto 0 auto;
     }

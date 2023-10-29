@@ -10,7 +10,7 @@
     }
     &__list {
         display: flex;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
@@ -22,7 +22,7 @@
     &__item {
         &:last-child {
             margin-bottom: 34px;
-            @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            @media (min-width: $tabletWidth) {
                 margin-bottom: 54px;
             }
             @media (min-width: $desktopWidth) {

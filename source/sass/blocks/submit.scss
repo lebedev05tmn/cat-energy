@@ -10,7 +10,7 @@
         flex-direction: row;
     }
     padding-bottom: 32px;
-    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+    @media (min-width: $tabletWidth) {
         padding-bottom: 72px;
     }
     @media (min-width: $desktopWidth) {

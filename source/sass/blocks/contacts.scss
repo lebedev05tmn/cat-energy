@@ -10,7 +10,7 @@
     }
     width: $mobilePercent;
     margin: 0 auto;
-    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+    @media (min-width: $tabletWidth) {
         width: $tabletPercent;
     }
     @media (min-width: $desktopWidth) {

@@ -3,7 +3,7 @@
 
 .adventages {
     width: $mobilePercent;
-    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+    @media (min-width: $tabletWidth) {
         width: $tabletPercent;
     }
     @media (min-width: $desktopWidth) {
@@ -19,7 +19,7 @@
     &__list {
         display: flex;
         flex-direction: column;
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
@@ -35,14 +35,14 @@
         margin-bottom: 24px;
         &:last-child {
             margin-bottom: 49px;
-            @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            @media (min-width: $tabletWidth) {
                 margin-bottom: 47px;
             }
             @media (min-width: $desktopWidth) {
                 margin-bottom: 26px;
             }
         }
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        @media (min-width: $tabletWidth) {
             margin-bottom: 37px;
         }
         @media (min-width: $tabletWidth) {
