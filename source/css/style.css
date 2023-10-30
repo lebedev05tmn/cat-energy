@@ -54,6 +54,15 @@ a {
   line-height: 36px;
   color: #000000;
 }
+@media (min-width: 768px) {
+  .title {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+}
 
 .text {
   font-family: "Arial", sans-serif;
@@ -61,6 +70,15 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .text {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+  }
 }
 
 .page ul,
@@ -215,6 +233,7 @@ a {
     display: flex;
     flex-direction: column;
     position: absolute;
+    z-index: 1000;
     top: 70px;
     right: 0;
   }
@@ -336,23 +355,26 @@ a {
 .cards {
   width: 100%;
 }
+.cards__item {
+  width: 100%;
+}
 @media (min-width: 1220px) {
   .cards__list {
     margin: 82px auto 71px auto;
     width: 85%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 0;
+    column-gap: 6.5%;
   }
 }
 
 .item-list {
-  padding: 21px 0 18px 20px;
   background: #f2f2f2;
   width: 87.5%;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
+  padding: 21px 0 18px 22px;
 }
 @media (min-width: 768px) {
   .item-list {
@@ -374,6 +396,15 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .item-list__title {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    color: #000000;
+  }
+}
 .item-list__link {
   font-family: "Oswald";
   font-weight: 400;
@@ -384,15 +415,60 @@ a {
   text-transform: uppercase;
   margin: 15px 0 18px 0;
 }
+@media (min-width: 768px) {
+  .item-list__link {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+}
 .item-list__link::after {
   content: url("../img/icon_arrow.svg");
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
+  .item-list__link::after {
+    margin-left: 25px;
+  }
+}
+@media (min-width: 1220px) {
+  .item-list__link::after {
+    margin-left: 28px;
+  }
 }
 .item-list .text {
   margin: 22px 0 23px 0;
+  width: 81%;
 }
 @media (min-width: 768px) {
   .item-list .text {
     margin: 24px 0 48px 0;
+    width: 48%;
+    color: #000000;
+  }
+}
+@media (min-width: 1220px) {
+  .item-list .text {
+    width: 82%;
+    height: 72px;
+  }
+}
+@media (min-width: 1220px) {
+  .item-list .text:last-child {
+    width: 80%;
+  }
+}
+.item-list__line {
+  width: 85.7%;
+  height: 1px;
+  background: #d9d9d9;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .item-list__line {
+    display: none;
   }
 }
 .item-list__item--order {
@@ -401,6 +477,17 @@ a {
 @media (min-width: 768px) {
   .item-list__item--order img {
     display: none;
+  }
+}
+.item-list__icon {
+  margin-right: 19px;
+}
+.item-list__icon:last-child {
+  margin-right: 11px;
+}
+@media (min-width: 768px) {
+  .item-list__icon {
+    margin-right: 0;
   }
 }
 
@@ -444,7 +531,7 @@ a {
 }
 .adventages__item {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 24px;
 }
@@ -473,11 +560,57 @@ a {
   }
 }
 .adventages__item .text {
-  width: 55%;
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  .adventages__item .text {
+    height: 72px;
+  }
+}
+@media (min-width: 768px) {
+  .adventages__item .text:first-child {
+    width: 201px;
+  }
+}
+@media (min-width: 768px) {
+  .adventages__item .text:nth-child(2) {
+    width: 227px;
+  }
+}
+@media (min-width: 768px) {
+  .adventages__item .text:nth-child(3) {
+    width: 209px;
+  }
+}
+@media (min-width: 768px) {
+  .adventages__item .text:last-child {
+    width: 245px;
+  }
+}
+@media (min-width: 768px) {
+  .adventages__item .text {
+    margin-left: 0;
+  }
 }
 @media (min-width: 768px) {
   .adventages__icon {
     margin-bottom: 31px;
+  }
+}
+.adventages__number {
+  display: none;
+}
+@media (min-width: 768px) {
+  .adventages__number {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    position: relative;
+    top: -40%;
+    left: 30%;
+    z-index: -10;
   }
 }
 

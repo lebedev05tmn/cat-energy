@@ -1,12 +1,12 @@
 @import "mixin";
 @import "variables";
 .item-list {
-    padding: 21px 0 18px 20px;
     background: $baseGrey;
     width: $mobilePercent;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
+    padding: 21px 0 18px 22px;
     @media (min-width: $tabletWidth) {
         width: $tabletPercent;
         padding: 77px 0 53px 52px;
@@ -18,20 +18,54 @@
     &__title {
         @include font(0, 0, 24px, 37px, 0);
         text-transform: uppercase;
+        @media (min-width: $tabletWidth) {
+            @include font(0, 0, 36px, 46px, 0);
+        }
     }
     &__link {
         @include font(0, 0, 16px, 16px, 0);
         text-decoration: none;
         text-transform: uppercase;
         margin: 15px 0 18px 0;
+        @media (min-width: $tabletWidth) {
+            @include font(0, 0, 20px, 30px, 0);
+        }
         &::after {
             content: url("../img/icon_arrow.svg");
+            margin-left: 15px;
+            @media (min-width: $tabletWidth) {
+                margin-left: 25px;
+            }
+            @media (min-width: $desktopWidth) {
+                margin-left: 28px;
+            }
         }
     }
     .text {
         margin: 22px 0 23px 0;
+        width: 81%;
         @media (min-width: $tabletWidth) {
             margin: 24px 0 48px 0;
+            width: 48%;
+            color: $baseBlack;
+        }
+        @media (min-width: $desktopWidth) {
+            width: 82%;
+            height: 72px;
+        }
+        &:last-child {
+            @media (min-width: $desktopWidth) {
+                width: 80%;
+            }
+        }
+    }
+    &__line {
+        width: 85.7%;
+        height: 1px;
+        background: $borderColor3;
+        margin-bottom: 15px;
+        @media (min-width: $tabletWidth) {
+            display: none;
         }
     }
     &__item--order {
@@ -40,6 +74,15 @@
             @media (min-width: $tabletWidth) {
                 display: none;
             }
+        }
+    }
+    &__icon {
+        margin-right: 19px;
+        &:last-child {
+            margin-right: 11px;
+        }
+        @media (min-width: $tabletWidth) {
+            margin-right: 0;
         }
     }
 }
