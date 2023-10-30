@@ -16,8 +16,58 @@
     &__link {
         @include font(0, 500, 20px, 20px, 0);
         text-transform: uppercase;
+        @media (max-width: ($tabletWidth - 1px)) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
         @media (min-width: $tabletWidth) {
             @include font(0, 0, 18px, 24px, 0);
+        }
+        @media (min-width: $desktopWidth) {
+            @include font(0, 0, 20px, 30px, $baseWhite);
+            position: sticky;
+            z-index: 10000;
+        }
+        &--black {
+            @media (min-width: $desktopWidth) {
+                color: $baseBlack;
+            }
+        }
+    }
+    &__item {
+        padding: 22px 0 24px 0;
+        border-top: $borderColor2 1px solid;
+        @media (min-width: $tabletWidth) {
+            padding: 0;
+            border: none;
+            padding-bottom: 8px;
+        }
+        &--active {
+            @media (min-width: $tabletWidth) {
+                border-bottom: $baseGreen 2px solid;
+            }
+            @media (min-width: $desktopWidth) {
+                border-bottom: $baseWhite 2px solid;
+                position: sticky;
+                z-index: 100000;
+            }
+        }
+        &--black {
+            @media (min-width: $desktopWidth) {
+                border-bottom: $baseGreen 2px solid;
+            }
+        }
+    }
+    &--mobile {
+        @media (max-width: ($tabletWidth - 1px)) {
+            background: $baseWhite;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            right: 0;
         }
     }
 }

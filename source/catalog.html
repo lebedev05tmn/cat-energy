@@ -84,7 +84,7 @@
     <body class="page__body">
         <header class="page__header page-header">
             <nav class="page-header__navigation">
-                <a class="page-header__logo logo" href="#">
+                <a class="page-header__logo logo" href="/index.html">
                     <svg
                         width="202"
                         height="60"
@@ -340,7 +340,7 @@
                         </defs>
                     </svg>
                 </a>
-                <button class="page-header__burger">
+                <button class="page-header__burger burger" type="submit">
                     <svg
                         width="24"
                         height="18"
@@ -371,19 +371,53 @@
                         />
                     </svg>
                 </button>
+                <button class="page-header__close close visually-hidden">
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <line
+                            y1="-0.75"
+                            x2="24.7577"
+                            y2="-0.75"
+                            transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)"
+                            stroke="black"
+                            stroke-width="1.5"
+                        />
+                        <line
+                            y1="-0.75"
+                            x2="24.7577"
+                            y2="-0.75"
+                            transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)"
+                            stroke="black"
+                            stroke-width="1.5"
+                        />
+                    </svg>
+                </button>
                 <ul class="page-header__menu site-menu site-menu--white">
-                    <li class="site-menu__item site-menu__item--active">
-                        <a class="site-menu__link" href="/index.html"
+                    <li class="site-menu__item">
+                        <a
+                            class="site-menu__link site-menu__link--black"
+                            href="/index.html"
                             >Главная</a
                         >
                     </li>
-                    <li class="site-menu__item">
-                        <a class="site-menu__link" href="#"
+                    <li
+                        class="site-menu__item site-menu__item--active site-menu__item--black"
+                    >
+                        <a
+                            class="site-menu__link site-menu__link--black"
+                            href="#"
                             >Каталог продукции</a
                         >
                     </li>
                     <li class="site-menu__item">
-                        <a class="site-menu__link" href="/form.html"
+                        <a
+                            class="site-menu__link site-menu__link--black"
+                            href="/form.html"
                             >Подбор программы</a
                         >
                     </li>
@@ -764,5 +798,6 @@
                 </ul>
             </div>
         </footer>
+        <script src="/js/main.js"></script>
     </body>
 </html>
