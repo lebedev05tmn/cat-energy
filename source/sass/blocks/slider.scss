@@ -11,5 +11,14 @@
     &__button {
         @include font(0, 0, 16px, 20px, 0);
         text-transform: uppercase;
+        @media (min-width: $tabletWidth) {
+            display: none;
+        }
+    }
+    &__range {
+        display: none;
+        @media (min-width: $tabletWidth) {
+            display: inline-block;
+        }
     }
 }

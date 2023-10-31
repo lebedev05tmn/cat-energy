@@ -664,7 +664,7 @@ a {
 }
 @media (min-width: 708px) {
   .example {
-    padding: 43px 0 55px 0;
+    padding: 43px 0 0 0;
   }
 }
 @media (min-width: 1240px) {
@@ -855,6 +855,19 @@ a {
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+}
+@media (min-width: 708px) {
+  .slider__button {
+    display: none;
+  }
+}
+.slider__range {
+  display: none;
+}
+@media (min-width: 708px) {
+  .slider__range {
+    display: inline-block;
+  }
 }
 
 .products {
@@ -1236,12 +1249,30 @@ a {
 .map__container {
   width: 87.5%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  height: 60px;
+  padding: 56px 0 62px 0;
+}
+@media (min-width: 1240px) {
+  .map__container {
+    position: absolute;
+    background: #ffffff;
+    width: 39.23%;
+    margin-right: 47%;
+  }
 }
 @media (min-width: 1240px) {
   .map {
     background: #f2f2f2;
+  }
+}
+.map__text {
+  width: 50%;
+}
+@media (min-width: 708px) {
+  .map__text {
+    width: 22.56%;
   }
 }
 .map__title {
@@ -1251,6 +1282,12 @@ a {
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+  width: 50%;
+}
+@media (min-width: 708px) {
+  .map__title {
+    width: 24.27%;
+  }
 }
 .map__image {
   width: 100%;
@@ -1259,6 +1296,15 @@ a {
 @media (min-width: 708px) {
   .map__image {
     width: 0;
+  }
+}
+.map iframe {
+  height: 362px;
+  width: 100%;
+}
+@media (min-width: 708px) {
+  .map iframe {
+    height: 400px;
   }
 }
 
