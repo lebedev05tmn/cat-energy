@@ -1,6 +1,10 @@
 @import "mixin";
 @import "variables";
 .slider {
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        background: $baseGrey;
+        width: 111.11%;
+    }
     &__button {
         @include font(0, 0, 16px, 20px, 0);
         text-transform: uppercase;

@@ -3,6 +3,9 @@
 .example {
     width: 100%;
     background: $baseGrey;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        background: $baseWhite;
+    }
     &__description {
         @include font(0, 0, 14px, 14px, 0);
         text-transform: uppercase;
@@ -67,7 +70,8 @@
             margin-bottom: 63px;
         }
         @media (min-width: $desktopWidth) {
-            margin-bottom: 76px;
+            padding-top: 69px;
+            padding-bottom: 76px;
         }
     }
     .text {
@@ -77,6 +81,11 @@
         }
         @media (min-width: $desktopWidth) {
             margin-bottom: 69px;
+        }
+    }
+    &__white {
+        @media (min-width: $desktopWidth) {
+            background: $baseWhite;
         }
     }
 }

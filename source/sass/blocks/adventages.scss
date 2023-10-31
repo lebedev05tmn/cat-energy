@@ -43,7 +43,6 @@
             }
         }
         @media (min-width: $tabletWidth) {
-            margin-bottom: 37px;
         }
         @media (min-width: $tabletWidth) {
             flex-direction: column;
@@ -87,11 +86,15 @@
     &__number {
         display: none;
         @media (min-width: $tabletWidth) {
-            @include font(0, 0, 280px, 280px, $baseGrey);
+            display: inline-block;
+            @include font(0, 0, 280px, 111px, $baseGrey);
             position: relative;
             top: -40%;
             left: 30%;
             z-index: -10;
+        }
+        @media (min-width: $desktopWidth) {
+            line-height: 37px;
         }
     }
 }

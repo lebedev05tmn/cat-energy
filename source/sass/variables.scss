@@ -9,6 +9,6 @@ $borderColor2: #e6e6e6;
 $borderColor3: #d9d9d9;
 $tabletWidth: 768px;
 $desktopWidth: 1220px;
-$mobilePercent: 87.5%;
+$mobilePercent: (280/320) * 100%;
 $tabletPercent: 90%;
 $desktopPercent: 85%;

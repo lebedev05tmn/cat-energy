@@ -353,7 +353,17 @@ a {
 }
 
 .cards {
-  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .cards {
+    width: 90%;
+  }
+}
+@media (min-width: 1220px) {
+  .cards {
+    width: auto;
+  }
 }
 .cards__item {
   width: 100%;
@@ -550,11 +560,6 @@ a {
 }
 @media (min-width: 768px) {
   .adventages__item {
-    margin-bottom: 37px;
-  }
-}
-@media (min-width: 768px) {
-  .adventages__item {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -602,10 +607,11 @@ a {
 }
 @media (min-width: 768px) {
   .adventages__number {
+    display: inline-block;
     font-family: "Oswald";
     font-weight: 400;
     font-size: 280px;
-    line-height: 280px;
+    line-height: 111px;
     color: #f2f2f2;
     position: relative;
     top: -40%;
@@ -613,11 +619,29 @@ a {
     z-index: -10;
   }
 }
+@media (min-width: 1220px) {
+  .adventages__number {
+    line-height: 37px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1219px) {
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #e6e6e6;
+  }
+}
 
 .example {
   width: 100%;
   background: #f2f2f2;
   padding: 25px 0 40px 0;
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+  .example {
+    background: #ffffff;
+  }
 }
 .example__description {
   font-family: "Oswald";
@@ -712,7 +736,8 @@ a {
 }
 @media (min-width: 1220px) {
   .example .title {
-    margin-bottom: 76px;
+    padding-top: 69px;
+    padding-bottom: 76px;
   }
 }
 .example .text {
@@ -728,9 +753,16 @@ a {
     margin-bottom: 69px;
   }
 }
+@media (min-width: 1220px) {
+  .example__white {
+    background: #ffffff;
+  }
+}
 
 .border {
+  text-align: center;
   border: 1px #cdcdcd solid;
+  width: 44%;
 }
 .border__value {
   font-family: "Oswald";
@@ -738,8 +770,27 @@ a {
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin-top: 15px;
+}
+.border .text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  position: relative;
+  margin: 0 auto;
+  top: 30%;
+  background: #f2f2f2;
+  width: 77px;
 }
 
+@media (min-width: 768px) and (max-width: 1219px) {
+  .slider {
+    background: #f2f2f2;
+    width: 111.11%;
+  }
+}
 .slider__button {
   font-family: "Oswald";
   font-weight: 400;

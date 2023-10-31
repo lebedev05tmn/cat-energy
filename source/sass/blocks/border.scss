@@ -2,8 +2,19 @@
 @import "variables";
 
 .border {
+    text-align: center;
     border: 1px $specialGrey solid;
+    width: 44%;
     &__value {
         @include font(0, 0, 24px, 24px, 0);
+        margin-top: 15px;
+    }
+    .text {
+        @include font(1, 0, 12px, 12px, $specialDark);
+        position: relative;
+        margin: 0 auto;
+        top: 30%;
+        background: $baseGrey;
+        width: 77px;
     }
 }
