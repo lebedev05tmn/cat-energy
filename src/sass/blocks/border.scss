@@ -5,6 +5,15 @@
     text-align: center;
     border: 1px $specialGrey solid;
     width: 44%;
+    @media (min-width: $tabletWidth) {
+        width: 23%;
+    }
+    @media (min-width: $desktopWidth) {
+        width: 13.28%;
+    }
+    &:first-child {
+        margin-right: 6%;
+    }
     &__value {
         @include font(0, 0, 24px, 24px, 0);
         margin-top: 15px;
@@ -16,5 +25,12 @@
         top: 30%;
         background: $baseGrey;
         width: 77px;
+        @media (min-width: $tabletWidth) {
+            background: $baseWhite;
+            top: 25%;
+        }
+        @media (min-width: $desktopWidth) {
+            background: $baseGrey;
+        }
     }
 }

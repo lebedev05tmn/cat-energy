@@ -11,7 +11,8 @@
         width: 62%;
     }
     @media (min-width: $desktopWidth) {
-        width: 39%;
+        min-width: 39%;
+        max-width: 45%;
     }
     &__link {
         @include font(0, 500, 20px, 20px, 0);

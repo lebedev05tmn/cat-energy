@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -82,7 +82,7 @@
         />
         <link rel="manifest" href="/favicon/manifest.json" />
     </head>
-    <body class="page__body">
+    <body class="page">
         <div class="page__container">
             <header class="page__header page-header">
                 <nav class="page-header__navigation">
@@ -625,8 +625,21 @@
                                 width="280"
                                 height="232"
                             />
-                            <button class="slider__button">было</button>
-                            <button class="slider__button">стало</button>
+                            <div class="slider__buttons">
+                                <button
+                                    class="slider__button slider__button--before"
+                                >
+                                    было
+                                </button>
+                                <button
+                                    class="slider__button slider__button--after"
+                                >
+                                    стало
+                                </button>
+                            </div>
+                            <div class="slider__range">
+                                <input />
+                            </div>
                         </div>
                     </div>
                 </section>
