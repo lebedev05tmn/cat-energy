@@ -7,6 +7,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    @media (min-width: $desktopWidth) {
+        align-items: flex-start;
+    }
     &__container {
         width: $mobilePercent;
         display: flex;
@@ -18,7 +21,8 @@
             position: absolute;
             background: $baseWhite;
             width: 39.23%;
-            margin-right: 47%;
+            padding: 56px 5.55%;
+            margin-left: 7.64%;
         }
     }
     @media (min-width: $desktopWidth) {
@@ -27,7 +31,9 @@
     &__text {
         width: 50%;
         @media (min-width: $tabletWidth) {
-            width: 22.56%;
+            width: 25.56%;
+            text-align: end;
+            @include font(1, 0, 16px, 20px, $specialDark);
         }
     }
     &__title {

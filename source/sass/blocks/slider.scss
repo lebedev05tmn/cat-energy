@@ -7,18 +7,89 @@
     @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
         background: $baseGrey;
         width: 111.11%;
+        height: 462px;
     }
-    &__button {
+    &__buttons {
+        display: flex;
         @include font(0, 0, 16px, 20px, 0);
         text-transform: uppercase;
+        margin-top: 15px;
         @media (min-width: $tabletWidth) {
             display: none;
         }
     }
+    &__click {
+        border: 1px solid $specialGrey;
+        border-radius: 6px;
+        width: 85px;
+        height: 12px;
+        display: flex;
+        background: $baseWhite;
+        align-self: center;
+        margin: 0 13px;
+    }
+    &__toggler {
+        width: 35px;
+        height: 6px;
+        background: $baseGreen;
+        border-radius: 6px;
+        display: block;
+    }
+    &__margin-1 {
+        margin: auto auto auto 6px;
+    }
+    &__margin-2 {
+        margin: auto 6px auto auto;
+    }
     &__range {
         display: none;
         @media (min-width: $tabletWidth) {
-            display: inline-block;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            margin-top: 366px;
+        }
+    }
+    &__input {
+        @media (min-width: $tabletWidth) {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: $rangeColor;
+            height: 6px;
+            width: 426px;
+            border-radius: 6px;
+            margin: 0 13px;
+        }
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 34px;
+            height: 34px;
+            border-radius: 50px;
+            background: $baseGreen;
+            border: 13px $baseWhite solid;
+            box-shadow: 0px 1px 3px 0px #00000029;
+            box-sizing: border-box;
+        }
+    }
+    &__image {
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            position: absolute;
+            top: 270%;
+        }
+        &--second {
+            @media (min-width: $tabletWidth) {
+                display: none;
+            }
+        }
+        &--not-mobile {
+            display: none;
+            @media (min-width: $tabletWidth) {
+                display: block;
+            }
         }
     }
 }
