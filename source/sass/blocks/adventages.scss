@@ -3,13 +3,13 @@
 
 .adventages {
     width: $mobilePercent;
+    margin: 0 auto;
     @media (min-width: $tabletWidth) {
         width: $tabletPercent;
     }
     @media (min-width: $desktopWidth) {
         width: $desktopPercent;
     }
-    margin: 0 auto;
     .title {
         margin-bottom: 40px;
         @media (min-width: $tabletWidth) {

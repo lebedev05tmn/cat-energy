@@ -38,6 +38,8 @@
     .title {
         color: $baseWhite;
         @media (min-width: $tabletWidth) {
+            padding-left: 0;
+            padding-bottom: 0;
             text-align: left;
             color: $baseBlack;
             @include font(0, 0, 60px, 60px, 0);
@@ -83,8 +85,10 @@
             order: 4;
             position: relative;
             z-index: -10;
-            top: -10px;
-            left: 15px;
+            left: 30%;
+        }
+        @media (min-width: $desktopWidth) {
+            left: 40%;
         }
     }
 }

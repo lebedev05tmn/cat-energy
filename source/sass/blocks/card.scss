@@ -2,16 +2,36 @@
 @import "variables";
 
 .card {
-    background: $baseGrey;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: $mobilePercent;
+    margin: 19px auto 25px auto;
+    .button {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 13px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    &__list {
+        width: 100%;
+    }
     .text {
-        @include font(1, 0, 16px, 16px, $specialDark);
+        @include font(1, 0, 12px, 16px, $specialDark);
     }
     &__title {
-        @include font(0, 0, 20px, 24px, $specialDark);
+        @include font(0, 0, 16px, 20px, $specialDark);
         text-transform: uppercase;
+        width: 54.29%;
+        margin-bottom: 18px;
     }
     &__item {
-        border-bottom: $specialGrey 1px solid;
+        display: flex;
+        justify-content: space-between;
+        width: 142px;
     }
     &--more {
         background: none;
@@ -24,5 +44,8 @@
         @include font(0, 0, 16px, 20px, $specialDark);
         background: $baseGrey;
         text-transform: uppercase;
+    }
+    img {
+        margin: auto;
     }
 }

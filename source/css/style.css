@@ -81,6 +81,14 @@ a {
   }
 }
 
+.border-none {
+  border-bottom: none !important;
+}
+
+.border-none--1 {
+  border: none !important;
+}
+
 .page ul,
 .page ol {
   list-style: none;
@@ -135,6 +143,25 @@ a {
   }
   .logo--mobile-logo {
     display: none;
+  }
+}
+
+.page-main .title {
+  padding: 27px 0 41px 6.25%;
+  border-top: #d9d9d9 1px solid;
+  border-bottom: #d9d9d9 1px solid;
+  margin-bottom: 8px;
+}
+@media (min-width: 708px) {
+  .page-main .title {
+    border: none;
+    padding: 65px 0 82px 4%;
+    margin: 0;
+  }
+}
+@media (min-width: 1240px) {
+  .page-main .title {
+    padding: 74px 0 84px 7.64%;
   }
 }
 
@@ -279,6 +306,8 @@ a {
 }
 @media (min-width: 708px) {
   .promo .title {
+    padding-left: 0;
+    padding-bottom: 0;
     text-align: left;
     color: #000000;
     font-family: "Oswald";
@@ -348,8 +377,12 @@ a {
     order: 4;
     position: relative;
     z-index: -10;
-    top: -10px;
-    left: 15px;
+    left: 30%;
+  }
+}
+@media (min-width: 1240px) {
+  .promo__image {
+    left: 40%;
   }
 }
 
@@ -389,8 +422,7 @@ a {
 }
 @media (min-width: 708px) {
   .item-list {
-    width: 90%;
-    padding: 77px 0 53px 52px;
+    padding: 77px 0 53px 80px;
   }
 }
 @media (min-width: 1240px) {
@@ -944,29 +976,10 @@ a {
   }
 }
 
-.products {
-  width: 87.5%;
-  margin: 0 auto;
-  padding-top: 21px;
-}
-@media (min-width: 708px) {
-  .products {
-    width: 90%;
-  }
-}
-@media (min-width: 1240px) {
-  .products {
-    width: 85%;
-  }
-}
-.products .title {
-  margin-bottom: 41px;
-}
-
 .catalog {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 @media (min-width: 708px) {
   .catalog {
@@ -980,27 +993,52 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.catalog__line {
+  width: 100%;
+  height: 1px;
+  background: #d9d9d9;
+}
 
 .card {
-  background: #f2f2f2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 87.5%;
+  margin: 19px auto 25px auto;
+}
+.card .button {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-top: 13px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.card__list {
+  width: 100%;
 }
 .card .text {
   font-family: "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 16px;
   color: #444444;
 }
 .card__title {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   color: #444444;
   text-transform: uppercase;
+  width: 54.29%;
+  margin-bottom: 18px;
 }
 .card__item {
-  border-bottom: #cdcdcd 1px solid;
+  display: flex;
+  justify-content: space-between;
+  width: 142px;
 }
 .card--more {
   background: none;
@@ -1021,6 +1059,9 @@ a {
   color: #444444;
   background: #f2f2f2;
   text-transform: uppercase;
+}
+.card img {
+  margin: auto;
 }
 
 .additional {
