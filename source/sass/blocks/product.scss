@@ -1,6 +1,10 @@
 @import "mixin";
 @import "variables";
 .product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     &__title {
         @include font(0, 0, 20px, 20px, 0);
         text-transform: uppercase;
@@ -8,5 +12,10 @@
     border-top: $specialGrey 1px solid;
     &:last-child {
         border-bottom: $specialGrey 1px solid;
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 }

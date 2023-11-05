@@ -929,11 +929,6 @@ a {
     align-items: center;
   }
 }
-@media (min-width: 708px) and (max-width: 1239px) {
-  .slider__range {
-    margin-top: 366px;
-  }
-}
 @media (min-width: 708px) {
   .slider__input {
     -webkit-appearance: none;
@@ -956,23 +951,9 @@ a {
   box-shadow: 0px 1px 3px 0px #00000029;
   box-sizing: border-box;
 }
-@media (min-width: 708px) and (max-width: 1239px) {
-  .slider__image {
-    position: absolute;
-    top: 270%;
-  }
-}
 @media (min-width: 708px) {
   .slider__image--second {
     display: none;
-  }
-}
-.slider__image--not-mobile {
-  display: none;
-}
-@media (min-width: 708px) {
-  .slider__image--not-mobile {
-    display: block;
   }
 }
 
@@ -985,12 +966,19 @@ a {
   .catalog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 6.25%;
+    row-gap: 60px;
   }
 }
 @media (min-width: 1240px) {
   .catalog {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: 85%;
+    column-gap: 6.37%;
+    row-gap: 63px;
   }
 }
 .catalog__line {
@@ -998,12 +986,28 @@ a {
   height: 1px;
   background: #d9d9d9;
 }
+@media (min-width: 708px) {
+  .catalog__line {
+    display: none;
+  }
+}
 
 .card {
   display: grid;
   grid-template-columns: 2fr 1fr;
   width: 87.5%;
   margin: 19px auto 25px auto;
+}
+@media (min-width: 708px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #f2f2f2;
+    margin: 0;
+  }
 }
 .card .button {
   grid-column-start: 1;
@@ -1015,6 +1019,23 @@ a {
   align-items: center;
   width: 100%;
 }
+@media (min-width: 708px) {
+  .card .button {
+    width: 76.54%;
+    margin-bottom: 40px;
+    margin-top: 13px;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+}
+@media (min-width: 1240px) {
+  .card .button {
+    width: 73.47%;
+  }
+}
 .card__list {
   width: 100%;
 }
@@ -1024,6 +1045,15 @@ a {
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+}
+@media (min-width: 708px) {
+  .card .text {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
+  }
 }
 .card__title {
   font-family: "Oswald";
@@ -1035,21 +1065,53 @@ a {
   width: 54.29%;
   margin-bottom: 18px;
 }
+@media (min-width: 708px) {
+  .card__title {
+    width: auto;
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+@media (min-width: 1240px) {
+  .card__title {
+    width: 59.18%;
+    margin: 0 auto 21px auto;
+  }
+}
 .card__item {
   display: flex;
-  justify-content: space-between;
   width: 142px;
 }
-.card--more {
-  background: none;
-  border: #f2f2f2 2px solid;
+@media (min-width: 708px) {
+  .card__item {
+    margin: 0 auto;
+    width: 76.54%;
+    justify-content: space-between;
+    padding: 5px 0 9px 0;
+    border-bottom: #cdcdcd 1px solid;
+  }
 }
-.card--more .text {
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
+@media (min-width: 1240px) {
+  .card__item {
+    width: 73.47%;
+  }
+}
+.card img {
+  margin: auto;
+}
+@media (min-width: 708px) {
+  .card img {
+    margin-bottom: 34px;
+  }
+}
+@media (min-width: 1240px) {
+  .card img {
+    margin-bottom: 46px;
+  }
 }
 .card--more .card__button {
   font-family: "Oswald";
@@ -1059,9 +1121,85 @@ a {
   color: #444444;
   background: #f2f2f2;
   text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.card img {
-  margin: auto;
+@media (min-width: 708px) {
+  .card--more .card__button {
+    margin: 38px;
+    width: 76.54%;
+  }
+}
+@media (min-width: 1240px) {
+  .card--more .card__button {
+    width: 73.47%;
+  }
+}
+.card--more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+}
+@media (min-width: 708px) {
+  .card--more {
+    border: #f2f2f2 2px solid;
+  }
+}
+.card--more .card__title {
+  width: 100%;
+  text-align: center;
+  margin: 23px 0 8px 0;
+}
+@media (min-width: 708px) {
+  .card--more .card__title {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #444444;
+    width: 41.36%;
+    margin: 0 0 23px 0;
+  }
+}
+@media (min-width: 1240px) {
+  .card--more .card__title {
+    width: 54.69%;
+  }
+}
+.card--more .text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  margin-bottom: 21px;
+}
+@media (min-width: 708px) {
+  .card--more .text {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+    width: 51.54%;
+    text-align: center;
+    margin-bottom: auto;
+  }
+}
+@media (min-width: 1240px) {
+  .card--more .text {
+    width: 68.16%;
+  }
+}
+@media (min-width: 708px) {
+  .card--more img {
+    margin: 52px 0 49px 0;
+  }
 }
 
 .additional {
@@ -1123,8 +1261,16 @@ a {
   line-height: 20px;
   color: #444444;
 }
+.additional__list {
+  display: flex;
+  flex-direction: column;
+}
 
 .product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   border-top: #cdcdcd 1px solid;
 }
 .product__title {
@@ -1138,11 +1284,22 @@ a {
 .product:last-child {
   border-bottom: #cdcdcd 1px solid;
 }
+.product__text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
 .gift {
   text-align: center;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-gift.png");
-  background-size: contain;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-gift.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 289.88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .gift__text {
   font-family: "Arial", sans-serif;

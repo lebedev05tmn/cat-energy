@@ -8,15 +8,24 @@
     @media (min-width: $tabletWidth) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        width: $tabletPercent;
+        margin: 0 auto;
+        column-gap: 6.25%;
+        row-gap: 60px;
     }
-
     @media (min-width: $desktopWidth) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        width: $desktopPercent;
+        column-gap: 6.37%;
+        row-gap: 63px;
     }
     &__line {
         width: 100%;
         height: 1px;
         background: $borderColor3;
+        @media (min-width: $tabletWidth) {
+            display: none;
+        }
     }
 }

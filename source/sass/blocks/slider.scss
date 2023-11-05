@@ -48,9 +48,6 @@
             display: flex;
             align-items: center;
         }
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
-            margin-top: 366px;
-        }
     }
     &__input {
         @media (min-width: $tabletWidth) {
@@ -76,19 +73,9 @@
         }
     }
     &__image {
-        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
-            position: absolute;
-            top: 270%;
-        }
         &--second {
             @media (min-width: $tabletWidth) {
                 display: none;
-            }
-        }
-        &--not-mobile {
-            display: none;
-            @media (min-width: $tabletWidth) {
-                display: block;
             }
         }
     }

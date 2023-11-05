@@ -37,4 +37,8 @@
     .text {
         @include font(1, 0, 16px, 20px, $specialDark);
     }
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
 }

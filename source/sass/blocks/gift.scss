@@ -6,8 +6,14 @@
             rgba(104, 183, 56, 0.85),
             rgba(104, 183, 56, 0.85)
         ),
-        url("../img/cat-gift.png");
-    background-size: contain;
+        url("../img/cat-gift.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 289.88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__text {
         @include font(1, 0, 16px, 20px, $baseWhite);
     }
