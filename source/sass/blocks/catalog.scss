@@ -11,14 +11,14 @@
         width: $tabletPercent;
         margin: 0 auto;
         column-gap: 6.25%;
-        row-gap: 60px;
+        row-gap: 141px;
     }
     @media (min-width: $desktopWidth) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         width: $desktopPercent;
         column-gap: 6.37%;
-        row-gap: 63px;
+        row-gap: 144px;
     }
     &__line {
         width: 100%;

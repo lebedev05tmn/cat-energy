@@ -5,11 +5,30 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    &__title {
-        @include font(0, 0, 20px, 20px, 0);
-        text-transform: uppercase;
-    }
     border-top: $specialGrey 1px solid;
+    padding: 13px 0 19px 0;
+    @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+        border-left: $specialGrey 1px solid;
+        border-right: $specialGrey 1px solid;
+        margin: 0 auto;
+        width: $tabletPercent;
+        padding: 28px 3%;
+        flex-wrap: wrap;
+    }
+    @media (min-width: $tabletWidth) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        @include font(0, 0, 16px, 16px, 0);
+        text-transform: uppercase;
+        margin-bottom: 13px;
+        @media (min-width: $tabletWidth) {
+            @include font(0, 0, 16px, 16px, 0);
+            margin: 0;
+        }
+    }
     &:last-child {
         border-bottom: $specialGrey 1px solid;
     }
@@ -17,5 +36,41 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        margin-bottom: 15px;
+        @include font(0, 0, 14px, 14px, 0);
+
+        @media (min-width: $tabletWidth) {
+            @include font(0, 0, 16px, 16px, $specialDark);
+            width: 50%;
+            text-align: end;
+            justify-content: flex-end;
+            margin: 0;
+        }
+        @media (min-width: $desktopWidth) {
+            text-align: start;
+            justify-content: space-between;
+            width: 288px;
+            margin: 0 40px 0 auto;
+        }
+        .text:last-child {
+            @media (min-width: $tabletWidth) {
+                margin-left: 55px;
+            }
+        }
+    }
+    .button {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: $tabletWidth) {
+            width: 100%;
+            margin-top: 25px;
+        }
+        @media (min-width: $desktopWidth) {
+            width: 244px;
+            margin: 0;
+        }
     }
 }
