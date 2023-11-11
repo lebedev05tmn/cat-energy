@@ -7,16 +7,40 @@
         @media (min-width: $tabletWidth) {
             margin-bottom: 57px;
         }
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        @include titleBorder;
+        span {
+            margin-left: 6.25%;
+            @include font(0, 0, 24px, 26px, 0);
+            @media (min-width: $tabletWidth) {
+                margin-left: 2%;
+                width: 100%;
+                @include font(0, 0, 36px, 36px, 0);
+            }
+            @media (min-width: $desktopWidth) {
+                width: 25%;
+            }
+        }
     }
     &__list {
         display: flex;
+        flex-direction: column;
+        width: $mobilePercent;
+        margin: 0 auto;
+        grid-row-gap: 13px;
         @media (min-width: $tabletWidth) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            width: $tabletPercent;
+            grid-row-gap: 32px;
         }
         @media (min-width: $desktopWidth) {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            width: $desktopPercent;
         }
     }
     &__item {
@@ -27,6 +51,34 @@
             }
             @media (min-width: $desktopWidth) {
                 margin-bottom: 61px;
+            }
+        }
+        @media (min-width: $tabletWidth) {
+            @include font(0, 0, 20px, 30px, 0);
+        }
+    }
+    &__input {
+        display: none;
+    }
+    &__input:checked + &__label::before {
+        content: url("../img/tick.svg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: $specialGrey 1px solid;
+            margin-right: 18px;
+            @media (min-width: $tabletWidth) {
+                margin-right: 26px;
             }
         }
     }

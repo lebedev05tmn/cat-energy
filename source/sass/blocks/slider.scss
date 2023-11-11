@@ -71,6 +71,17 @@
             box-shadow: 0px 1px 3px 0px #00000029;
             box-sizing: border-box;
         }
+        &::-moz-range-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 34px;
+            height: 34px;
+            border-radius: 50px;
+            background: $baseGreen;
+            border: 13px $baseWhite solid;
+            box-shadow: 0px 1px 3px 0px #00000029;
+            box-sizing: border-box;
+        }
     }
     &__image {
         &--second {

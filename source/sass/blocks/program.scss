@@ -3,9 +3,56 @@
 
 .program {
     border: none;
-    border-top: $borderColor3 1px solid;
-    border-bottom: $borderColor3 1px solid;
+    border-top: 1px solid $borderColor3;
+    border-bottom: 1px solid $borderColor3;
+    padding: 21px 0;
     @media (min-width: $tabletWidth) {
         border: $borderColor3 1px solid;
+        padding: 30px 0 25px 30px;
+        width: 86%;
+        margin: 0 auto;
+    }
+    @media (min-width: $desktopWidth) {
+        width: 46.56%;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 18px;
+        width: $mobilePercent;
+        margin: 0 auto;
+        @media (min-width: $tabletWidth) {
+            width: 100%;
+        }
+        @media (min-width: $desktopWidth) {
+            width: auto;
+        }
+    }
+    &__input {
+        display: none;
+    }
+    &__input:checked + &__label::before {
+        content: "";
+        display: block;
+        border-radius: 50px;
+        width: 18px;
+        height: 18px;
+        border: 12px $baseWhite solid;
+        background: $baseGreen;
+        outline: 1px solid $specialGrey;
+    }
+    &__label {
+        display: flex;
+        align-items: center;
+        grid-column-gap: 15px;
+        cursor: pointer;
+        &::before {
+            content: "";
+            display: block;
+            border-radius: 50px;
+            border: 1px solid $specialGrey;
+            width: 40px;
+            height: 40px;
+        }
     }
 }

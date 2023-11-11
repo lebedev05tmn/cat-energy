@@ -2,18 +2,20 @@
 @import "variables";
 
 .personal {
+    @media (min-width: $desktopWidth) {
+        width: $desktopPercent;
+        margin: 0 auto;
+    }
     padding-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @media (min-width: $tabletWidth) {
         padding-bottom: 71px;
     }
     @media (min-width: $desktopWidth) {
         padding-bottom: 69px;
+        flex-direction: row;
+        align-items: center;
     }
-    display: flex;
-    @media (min-width: $desktopWidth) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    flex-direction: column;
-    justify-content: space-between;
 }

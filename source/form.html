@@ -462,6 +462,7 @@
                                         name="weight"
                                         id="weight"
                                         placeholder="7"
+                                        min="0"
                                         required
                                     />
                                 </li>
@@ -475,18 +476,22 @@
                                         name="age"
                                         id="age"
                                         placeholder="7"
+                                        min="0"
                                         required
                                     />
                                 </li>
                             </ul>
                         </fieldset>
+                        <div class="personal__line"></div>
                         <fieldset class="personal__program program">
                             <ul class="program__list">
                                 <li class="program__item">
                                     <input
+                                        class="program__input"
                                         type="radio"
                                         name="program"
                                         id="slim"
+                                        checked
                                     />
                                     <label class="program__label" for="slim"
                                         >похудение</label
@@ -494,6 +499,7 @@
                                 </li>
                                 <li class="program__item">
                                     <input
+                                        class="program__input"
                                         type="radio"
                                         name="program"
                                         id="pro"
@@ -504,6 +510,7 @@
                                 </li>
                                 <li class="program__item">
                                     <input
+                                        class="program__input"
                                         type="radio"
                                         name="program"
                                         id="no"
@@ -517,7 +524,7 @@
                     </div>
                     <fieldset class="form__contact-details contact-details">
                         <legend class="contact-details__title">
-                            Контактные данные (владельца кота)
+                            <span>Контактные данные (владельца кота)</span>
                         </legend>
                         <ul class="contact-details__list">
                             <li class="contact-details__item">
@@ -551,17 +558,21 @@
                         </ul>
                     </fieldset>
                     <fieldset class="form__comment comment">
-                        <legend class="comment__title">Комментарий</legend>
-                        <input
+                        <legend class="comment__title">
+                            <span>Комментарий</span>
+                        </legend>
+                        <textarea
                             class="comment__area"
                             type="text"
                             name="comment"
                             id="comment"
                             placeholder="Расскажите обо всех повадках кота"
-                        />
+                        ></textarea>
                     </fieldset>
                     <fieldset class="form__more more">
-                        <legend class="more__title">Дополнительно</legend>
+                        <legend class="more__title">
+                            <span>Дополнительно</span>
+                        </legend>
                         <ul class="more__list">
                             <li class="more__item">
                                 <input
@@ -620,7 +631,7 @@
             </section>
         </main>
         <footer class="page__footer page-footer">
-            <div class="page-footer__map map">
+            <div class="page-footer__map map map--not-index">
                 <iframe
                     class="map__image"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728576!2d30.32047247772346!3d59.93871647491517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1698602250149!5m2!1sru!2sru"
