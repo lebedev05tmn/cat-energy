@@ -297,7 +297,7 @@ a {
     width: 50%;
     height: 694px;
     margin: 0 50%;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background.png") no-repeat;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-desktop.png") no-repeat;
     background-size: cover;
   }
 }
@@ -331,6 +331,14 @@ a {
     font-size: 20px;
     line-height: 20px;
     color: #ffffff;
+    position: absolute;
+    top: 35%;
+  }
+}
+@media (min-width: 1240px) {
+  .promo .button {
+    position: relative;
+    top: 0;
   }
 }
 .promo__text {
@@ -372,17 +380,25 @@ a {
     align-items: flex-start;
   }
 }
+.promo__image {
+  width: 100%;
+  height: 270px;
+}
 @media (min-width: 708px) {
   .promo__image {
-    order: 4;
+    height: 609px;
+    width: 708px;
     position: relative;
-    z-index: -10;
-    left: 30%;
+    left: -15%;
   }
 }
 @media (min-width: 1240px) {
   .promo__image {
-    left: 40%;
+    height: 559px;
+    width: 552px;
+    position: absolute;
+    left: 35%;
+    top: 10%;
   }
 }
 
@@ -518,20 +534,34 @@ a {
   display: flex;
   align-items: center;
 }
-@media (min-width: 708px) {
-  .item-list__item--order img {
-    display: none;
-  }
-}
 .item-list__icon {
   margin-right: 19px;
+  width: 53px;
+  height: 50px;
 }
 .item-list__icon:last-child {
   margin-right: 11px;
+  width: 67px;
 }
-@media (min-width: 708px) {
+@media (min-width: 1240px) {
+  .item-list__icon:last-child {
+    width: 100px;
+    height: 134px;
+  }
+}
+@media (min-width: 708px) and (max-width: 1239px) {
   .item-list__icon {
-    margin-right: 0;
+    position: absolute;
+    width: 200px;
+    height: 211px;
+    left: 60%;
+    padding-top: 20%;
+  }
+}
+@media (min-width: 1240px) {
+  .item-list__icon {
+    width: 100px;
+    height: 106px;
   }
 }
 
@@ -873,12 +903,14 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
 }
 @media (min-width: 708px) and (max-width: 1239px) {
   .slider {
     background: #f2f2f2;
     width: 111.11%;
     height: 462px;
+    padding-bottom: 55px;
   }
 }
 .slider__buttons {
@@ -961,6 +993,17 @@ a {
   border: 13px #ffffff solid;
   box-shadow: 0px 1px 3px 0px #00000029;
   box-sizing: border-box;
+}
+.slider__image {
+  width: 280px;
+  height: 232px;
+}
+@media (min-width: 708px) {
+  .slider__image--first {
+    height: 511px;
+    width: 100%;
+    position: relative;
+  }
 }
 @media (min-width: 708px) {
   .slider__image--second {
@@ -1112,33 +1155,16 @@ a {
     width: 73.47%;
   }
 }
-.card img:not(.card__image--more) {
+.card picture {
   margin: auto;
 }
-.card img:not(.card__image--more):nth-child(2n+1) {
-  width: 68px;
-  height: 86px;
-}
-@media (min-width: 708px) {
-  .card img:not(.card__image--more):nth-child(2n+1) {
-    width: 161px;
-    height: 172px;
-  }
-}
-.card img:not(.card__image--more):nth-child(2n) {
-  width: 84px;
-  height: 100px;
-}
-@media (min-width: 708px) {
-  .card img:not(.card__image--more):nth-child(2n) {
-    width: 168px;
-    height: 200px;
-  }
+.card img:not(.card__image--more) {
+  margin: auto;
 }
 @media (min-width: 708px) {
   .card img:not(.card__image--more) {
     position: relative;
-    top: -10%;
+    top: -20%;
   }
 }
 .card--more .card__button {
@@ -1447,6 +1473,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     height: 200px;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-gift-tablet.png") no-repeat;
   }
 }
 @media (min-width: 1240px) {

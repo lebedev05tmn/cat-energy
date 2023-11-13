@@ -31,7 +31,7 @@
                     rgba($baseGreen, 0.85),
                     rgba($baseGreen, 0.85)
                 ),
-                url("../img/cat-background.png") no-repeat;
+                url("../img/cat-background-desktop.png") no-repeat;
             background-size: cover;
         }
     }
@@ -53,6 +53,12 @@
             width: max-content;
             padding: 14px 3.38%;
             @include font(0, 0, 20px, 20px, $baseWhite);
+            position: absolute;
+            top: 35%;
+        }
+        @media (min-width: $desktopWidth) {
+            position: relative;
+            top: 0;
         }
     }
     &__text {
@@ -81,14 +87,20 @@
         }
     }
     &__image {
+        width: 100%;
+        height: 270px;
         @media (min-width: $tabletWidth) {
-            order: 4;
+            height: 609px;
+            width: 708px;
             position: relative;
-            z-index: -10;
-            left: 30%;
+            left: -15%;
         }
         @media (min-width: $desktopWidth) {
-            left: 40%;
+            height: 559px;
+            width: 552px;
+            position: absolute;
+            left: 35%;
+            top: 10%;
         }
     }
 }

@@ -1,6 +1,6 @@
 let togglerButton = document.querySelector(".slider__click");
 let togglerBlock = document.querySelector(".slider__toggler");
-let imageFirst = document.querySelector(".slider__image--first");
+let imageFirst = document.querySelector(".slider__picture");
 let imageSecond = document.querySelector(".slider__image--second");
 
 togglerButton.onclick = function () {

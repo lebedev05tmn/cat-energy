@@ -70,19 +70,29 @@
     &__item--order {
         display: flex;
         align-items: center;
-        img {
-            @media (min-width: $tabletWidth) {
-                display: none;
-            }
-        }
     }
     &__icon {
         margin-right: 19px;
+        width: 53px;
+        height: 50px;
         &:last-child {
             margin-right: 11px;
+            width: 67px;
+            @media (min-width: $desktopWidth) {
+                width: 100px;
+                height: 134px;
+            }
         }
-        @media (min-width: $tabletWidth) {
-            margin-right: 0;
+        @media (min-width: $tabletWidth) and (max-width: ($desktopWidth - 1px)) {
+            position: absolute;
+            width: 200px;
+            height: 211px;
+            left: 60%;
+            padding-top: 20%;
+        }
+        @media (min-width: $desktopWidth) {
+            width: 100px;
+            height: 106px;
         }
     }
 }

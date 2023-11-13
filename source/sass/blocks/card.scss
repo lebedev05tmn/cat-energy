@@ -73,29 +73,14 @@
             width: 73.47%;
         }
     }
+    picture {
+        margin: auto;
+    }
     img:not(.card__image--more) {
         margin: auto;
-        &:nth-child(2n + 1) {
-            width: 68px;
-            height: 86px;
-            @media (min-width: $tabletWidth) {
-                width: 161px;
-                height: 172px;
-            }
-        }
-        &:nth-child(2n) {
-            width: 84px;
-            height: 100px;
-            @media (min-width: $tabletWidth) {
-                width: 168px;
-                height: 200px;
-            }
-        }
         @media (min-width: $tabletWidth) {
             position: relative;
-            top: -10%;
-        }
-        @media (min-width: $desktopWidth) {
+            top: -20%;
         }
     }
     &--more &__button {
