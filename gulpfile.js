@@ -117,6 +117,12 @@ export const watcher = () => {
     gulp.watch("source/*.html").on("change", browser.reload);
 };
 
+export const build = (cb) => {
+    cb();
+};
+
+build(gulp.series(styles, htmlminify, script, optimizeImages, sprite, copy));
+
 export default gulp.series(
     styles,
     htmlminify,
