@@ -1,8 +1,0 @@
-@import "mixin";
-@import "variables";
-.text {
-    @include font(1, 0, 14px, 18px, $specialDark);
-    @media (min-width: $tabletWidth) {
-        @include font(1, 0, 16px, 24px, $specialDark);
-    }
-}
