@@ -3,6 +3,14 @@
 Учебный проект Cat-Energy выполнен в рамках курса Фронтенд разработчик от [htmlacademy](https://htmlacademy.ru)
 ![htmlacademy](https://ritfest.ru/i/ritfest/2018/reunion/members/html_academy.png)
 
+# Результат работы
+
+### Результат доступен по ссылке [https://lebedev05tmn.github.io/cat-energy](https://lebedev05tmn.github.io/cat-energy)
+
+##### Вид главной страницы при загрузке
+
+![Вид главной страницы при загрузке](https://github.com/lebedev05tmn/cat-energy/blob/main/source/img/Снимок%20экрана%202023-12-29%20в%2018.16.27.png)
+
 ## В рамках проекта освоены такие знания как:
 
 - ### Разметка по метододологии БЭМ нотации
@@ -137,11 +145,3 @@ build(gulp.series(styles, htmlminify, script, optimizeImages, sprite, copy));
 2. Описание работы:
    - верстка макета по БЭМ-нотации
    - адаптивная/резиновая стилизация элементов и сеток страницы
-
-# Результат работы
-
-### Результат доступен по ссылке [https://lebedev05tmn.github.io/cat-energy](https://lebedev05tmn.github.io/cat-energy)
-
-##### Вид главной страницы при загрузке
-
-![Вид главной страницы при загрузке](https://github.com/lebedev05tmn/cat-energy/blob/main/source/img/Снимок%20экрана%202023-12-29%20в%2018.16.27.png)
